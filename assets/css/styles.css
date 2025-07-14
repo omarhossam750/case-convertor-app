@@ -21,6 +21,7 @@ html {
   height: 100vh;
   background-color: lightyellow;
   position: relative;
+  overflow: hidden;
 }
 .wrapper {
   padding: 18px;
@@ -204,10 +205,12 @@ html {
 .sun {
   position: absolute;
   top: -95px;
-  left: -125px;
+  right: -125px;
   width: 380px;
   height: 380px;
   background-color: #ff9c00;
-  border-radius: 50% 50% 50% 50%;
-  box-shadow: 4px 4px 16px 4px rgba(157, 60, 12, 0.6);
+  border-radius: 50%;
+  box-shadow: 4px 4px 140px 7px rgba(157, 60, 12, 0.6);
+  animation: anime 2s ease;
 }
+

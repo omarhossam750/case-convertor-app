@@ -51,10 +51,11 @@ function copyToClipboard(text) {
 }
 
 copyBtn.onclick = function() {
-  copyToClipboard(result.textContent);
-  msg.style.transform = "translateX(-50%) scale(1)";
-  setTimeout(function() {
-    msg.style.transform = "translateX(-50%) scale(0)";
-  }, 3500)
-  
+  if (result.textContent) {
+    copyToClipboard(result.textContent);
+    msg.style.transform = "translateX(-50%) scale(1)";
+    setTimeout(function() {
+      msg.style.transform = "translateX(-50%) scale(0)";
+    }, 3500)
+  }
 }
