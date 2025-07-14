@@ -19,7 +19,7 @@ html {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f5f5f5;
+  background-color: lightyellow;
   position: relative;
 }
 .wrapper {
@@ -28,6 +28,7 @@ html {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 600px;
+  background-color: #f9f9f9;
 }
 .header {
   position: relative;
@@ -58,6 +59,7 @@ html {
   outline: none;
   width: 100%;
   resize: none;
+  font-family: "Times New Roman", serif;
   transition: 0.2s ease;
 }
 #text-entry:focus {
@@ -111,23 +113,6 @@ html {
   &:hover { opacity: 0.75 }
   &:active { opacity: 0.5 }
 }
-.custom-shape-divider-bottom-1752478907 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1752478907 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 94px;
-}
-
 .go-back-btn {
   position: absolute;
   bottom: 50px;
@@ -150,7 +135,7 @@ html {
 }
 #msg {
   position: absolute;
-  top: 15px;
+  top: 58px;
   left: 50%;
   transform: translateX(-50%) scale(0);
   font-size: 3rem;
@@ -161,9 +146,6 @@ html {
   transition: 0.2s ease-out;
 }
 
-.custom-shape-divider-bottom-1752478907 .shape-fill {
-  fill: #aef;
-}
 @media (max-width: 1140px) {
   html {
     font-size: 14px;
@@ -177,8 +159,13 @@ html {
   }
 }
 @media (min-width: 1900px) {
+  .header {
+    font-size: 2.3rem;
+  }
+  
   .wrapper {
-    width: 800px;
+    width: 1000px;
+    padding: 20px 24px;
   }
   .entry-container {
     gap: 20px;
@@ -187,9 +174,39 @@ html {
     font-size: 1.9rem;
   }
   #text-entry {
-    font-size: 1.8rem!important;
     line-height: 45px;
-    height: 430px;
+    height: 620px;
+    padding: 26px 28px;
+    border-width: 6px;
+    font-size: 2.1rem!important;
   }
 }
+.custom-shape-divider-top-1752490518 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1752490518 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1752490518 .shape-fill {
+    fill: lightyellow;
+}
+.sun {
+  position: absolute;
+  top: -95px;
+  left: -125px;
+  width: 380px;
+  height: 380px;
+  background-color: #ff9c00;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: 4px 4px 16px 4px rgba(157, 60, 12, 0.6);
+}
