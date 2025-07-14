@@ -88,7 +88,7 @@ html {
 }
 #result {
   width: 50%;
-  height: 600px;
+  height: 700px;
   font-size: 1.75rem;
   line-height: 4.1rem;
   color: #003;
@@ -98,6 +98,7 @@ html {
   border-radius: 8px;
   border: 4px dashed mediumseagreen;
   font-family: monospace, consolas;
+  overflow: auto;
 }
 #copy-btn {
   display: block;
